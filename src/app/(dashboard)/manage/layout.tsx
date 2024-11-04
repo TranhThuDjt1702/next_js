@@ -1,8 +1,6 @@
-import Notfound from '@/app/not-found'
-import { SignIn } from '@clerk/nextjs';
+
 import { auth } from '@clerk/nextjs/server'
-import { redirect } from 'next/navigation';
-import { useRouter } from 'next/router';
+
 
 import React from 'react'
 

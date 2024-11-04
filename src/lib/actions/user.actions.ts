@@ -11,6 +11,6 @@ export async function createUser(params:TCreateUserParams):Promise<TCreateUserPa
         const newUser: TCreateUserParams = await User.create(params)
         return newUser
     }catch(error){
-        // console.log("Error creating user:", error);
+        console.log("Error creating user:", error);
     }
 }
