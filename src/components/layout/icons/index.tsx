@@ -1,0 +1,7 @@
+export {default as IconExplore} from'./iconExplore'
+export {default as IconPlay} from './iconPlay'
+export {default as Iconcomment} from './IconComment'
+export {default as IconMember} from './IconMember'
+export {default as IconHome} from './IconHome'
+export {default as IconClock} from './IconClock'
+export {default as IconEye} from './IconEye'
