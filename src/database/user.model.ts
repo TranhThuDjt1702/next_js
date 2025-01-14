@@ -1,11 +1,11 @@
 import { EuserRoles, EuserStatus } from "@/contants/enums";
 import { Document, model, models } from "mongoose";
-import { Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 export interface IUser extends Document{
     clerkId :  string;
     name : string;
     userName : string;
-    email :  string;
+    email_address :  string;
     avatar :  string;
     courses :  Schema.Types.ObjectId[]; // khóa ngoại để liên kết giữa các bảng
     create_at : Date;
@@ -16,7 +16,7 @@ export interface IUser extends Document{
 const userSchema = new Schema<IUser>({
     clerkId: {
         type: String,
-        required: true
+        // required: true
     },
     name: {
         type: String
@@ -26,7 +26,7 @@ const userSchema = new Schema<IUser>({
         unique:true,
         required: true
     },
-    email:{
+    email_address:{
         type : String,
         unique: true,
         required : true
